@@ -1,0 +1,5 @@
+<library path="lib/libtiago_energy_shaping_controller_lib">
+    <class name="tiago_energy_shaping_controller/MyEnergyShapingPositionController"            
+           type="tiago_energy_shaping_controller_ns::MyEnergyShapingPositionController" 
+           base_class_type="controller_interface::ControllerBase" />
+</library>
