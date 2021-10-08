@@ -21,7 +21,7 @@
 -->
   <!--Spawn the controller -->
   <group if="$(arg spawn)">
-	<node name="$(arg controller_ns)" pkg="controller_manager" type="spawner" output="screen" args="$(arg controller_ns) energy_arm_left_controller --timeout 120" />
+	<node name="$(arg controller_ns)" pkg="controller_manager" type="spawner" output="screen" args="$(arg controller_ns) --timeout 120" />
   </group>
 
 </launch>
