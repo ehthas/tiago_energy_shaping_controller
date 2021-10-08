@@ -1,6 +1,8 @@
-energy_arm_left_controller:
-  type: "tiago_energy_shaping_controller/MyEnergyShapingPositionController"
-  joints:
+type: "tiago_energy_shaping_controller/MyEnergyShapingPositionController"
+robot_model_chains: ["gripper_left_link"]
+dt: 0.01
+
+joints:
     - arm_left_1_joint
     - arm_left_2_joint
     - arm_left_3_joint
