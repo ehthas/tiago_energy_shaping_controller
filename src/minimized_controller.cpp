@@ -43,8 +43,8 @@ namespace tiago_energy_shaping_controller_ns
 {
    class MyEnergyShapingPositionController : public controller_interface::Controller<hardware_interface::EffortJointInterface> 
    {
-   /*    bool initRequest(hardware_interface::RobotHW* robot_hw,
-                 //ros::NodeHandle& root_nh,
+       bool initRequest(hardware_interface::RobotHW* robot_hw,
+                 /*ros::NodeHandle& root_nh,*/
                  ros::NodeHandle& controller_nh,
                  ClaimedResources& claimed_resources)
        {
@@ -82,7 +82,7 @@ namespace tiago_energy_shaping_controller_ns
             //joint_state_iface->clearClaims();
 
 
-            if (!init(effort_iface, joint_state_iface, root_nh,controller_nh))  //root_nh,
+            if (!init(effort_iface, controller_nh))  //  joint_state_iface, root_nh,
             {
                ROS_ERROR("Failed to initialize the controller");
                return false;
@@ -101,7 +101,7 @@ namespace tiago_energy_shaping_controller_ns
             //ROS_INFO_STREAM("Controller exiting Init Request Function");
             return true;
        }
-   */
+   
        bool init(hardware_interface::EffortJointInterface* effort_iface, ros::NodeHandle& control_nh)
                  /*hardware_interface::JointStateInterface* joint_state_iface,
                  ros::NodeHandle& root_nh,*/ 
